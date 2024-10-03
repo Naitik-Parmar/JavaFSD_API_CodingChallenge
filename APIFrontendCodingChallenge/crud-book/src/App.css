@@ -1,0 +1,141 @@
+/* General App Container */
+.app-container {
+  background-image: url('/public/book.jpg'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Aligned at the top */
+  color: #fff;
+  padding: 2rem;
+}
+
+/* Header Styles */
+h1 {
+  font-size: 3rem;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/* Button Styles */
+.button-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.ui.button.primary {
+  background-color: #2d8fdd !important;
+  color: #fff !important;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+.ui.button.secondary {
+  background-color: #f05a28 !important;
+  color: #fff !important;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+/* Modal Styles */
+.ui.modal .header {
+  background-color: #1b1c1d;
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.ui.modal .content {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 1.5rem;
+}
+
+.ui.modal .actions {
+  background-color: #f9f9f9;
+  padding: 1rem;
+}
+
+.ui.modal .ui.button.primary {
+  background-color: #2d8fdd !important;
+}
+
+.ui.modal .ui.button.secondary {
+  background-color: #f05a28 !important;
+}
+
+/* Form Styles */
+.ui.form .field input {
+  background-color: #ffffff !important;
+  color: #333 !important;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 1px solid #ddd !important;
+}
+
+.ui.form .field select {
+  background-color: #ffffff !important;
+  color: #333 !important;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 1px solid #ddd !important;
+}
+
+/* Segment and List Styles */
+.ui.segment {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  color: #ffffff !important;
+  padding: 2rem !important;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ui.list .item {
+  color: #ffffff !important;
+}
+
+.ui.list .header {
+  color: #f9f9f9 !important;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.ui.list .description {
+  color: #ccc !important;
+}
+
+/* Grid and Column Styles */
+.ui.grid > .row {
+  margin-bottom: 2rem;
+}
+
+.ui.grid .column h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .ui.grid > .row {
+    flex-direction: column;
+  }
+}
